@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d;
+    color: #f1f1f1;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: #9146ff;
+}
+
+header {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('your-banner-image.jpg') no-repeat center center/cover;
+    position: relative;
+    text-align: center;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #9146ff;
+}
+
+#bio{
+    margin-bottom: -100px;
+}
+
+.bio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.bio-image {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.bio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio-content {
+    max-width: 500px;
+    text-align: left;
+}
+
+.bio-content p {
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #9146ff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+.video-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-card h3 {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #fff;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+    color: #999;
+}
+
+footer a {
+    color: #9146ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px){
+    *{
+        text-align: center;
+    }
+    header{
+        display: none
+    }
+}
